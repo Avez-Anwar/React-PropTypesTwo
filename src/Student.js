@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Student(props) {
   return (
@@ -14,13 +14,13 @@ function Student(props) {
 }
 
 Student.defaultProps = {
-  name: "Peter",
   roll: 121,
   class: 11
 };
 
 Student.propTypes = {
-  name: PropTypes.string,
+  //is Required propType
+  name: PropTypes.string.isRequired,
   roll: PropTypes.number,
   class: PropTypes.number
 };
